@@ -1,0 +1,99 @@
+html {
+    font-family: 'Courier New', Courier, monospace
+}
+
+body {
+    margin: 0px;
+}
+
+#key {
+    background-color: darkslategray;
+    position: fixed;
+    width: 35%;
+    height: 100%;
+    text-align: center;
+    font-size: 60px;
+    color: pink;
+}
+
+#caesar {
+    position: fixed;
+    background-color: green;
+    left: 35%;
+    width: 100%;
+    top: 0px;
+    height: 50%;
+    text-align: center;
+}
+
+#square {
+    position: fixed;
+    width: 100%;
+    left: 35%;
+    background-color: skyblue;
+    bottom: 0px;
+    height: 50%;
+    text-align: center;
+}
+
+textarea {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    height: 3%;
+}
+
+#title {
+    margin-bottom: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input {
+    display: inline-block;
+    position: relative;
+    margin-left: 16%;
+    margin-right: auto;
+    margin-bottom: 2%;
+}
+
+button {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    height: 30px;
+    width: 120px;
+    font-size: 14px;
+}
+
+.caesar_message, .square_message {
+    margin-right: 35%;
+    font-size: 48px;
+    margin-top: 10px;
+}
+
+table {
+    font-size: 45px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+td {
+    border: 2px orange solid;
+    padding: 6px;
+    text-align: center;
+}
+
+span {
+    font-size: 40px;
+    position: fixed;
+    margin-top: 20px;
+
+}
