@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- This document is partitioned into 3 parts. The left part is where a user can input text
+    so that it is encrypted by the page and output on the right side of the page. The message
+    on the top is encrypted using the Caesar Cipher while the message on the bottom is encrypted
+    using the Square Cipher. The user can change the keys for both ciphers to change
+    the message that is output.-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Cracking the Code</title>
+        <link id="cssFile" rel="stylesheet" type="text/css" href="./css/style.css">
+    </head>
+    
+    <body>
+        <div id="key">
+            <p id="title"><strong>Cracking the Code</strong></p>
+            <textarea class="input" placeholder="Enter message here!"></textarea>
+            <span>0</span><input type="range" min="0" max="26" value="0">
+            <button onclick="shuffleArray()" type="button">Update Square</button>
+            <table>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="caesar">
+            <h1 class="caesar_message">c</h1>
+        </div>
+
+        <div id="square">
+            <h1 class="square_message">s</h1>
+        </div>
+        <script src="./js/script.js">
+        </script>
+    </body>
+</html>
