@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- Ethan Huang CSC 337 -->
+<!--This document represents a translation service where the user can specify an input and output
+language, and whatever the user types into the input field on the left will be output in the
+specified language on the right.-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link id="cssFile" rel="stylesheet" type="text/css" href="./style.css">
+        <title>Translator</title>
+    </head>
+
+    <body>
+        <div id="title">
+            <h1>Translator</h1>
+        </div>
+        <div id="translate">
+            <table>
+                <tr>
+                    <td>
+                        <select id="from" onchange="copyText()">
+                            <option value="spanish">Spanish</option>
+                            <option value="german">German</option>
+                            <option value="english">English</option>
+                        </select>
+                        <textarea rows="10" cols="10" oninput="copyText()" id="input"></textarea>
+                    </td>
+                    <td>
+                    <select id="to" onchange="copyText()">
+                        <option value="spanish">Spanish</option>
+                        <option value="german">German</option>
+                        <option value="english">English</option>
+                    </select>
+                    <textarea id="output" rows="10" cols="10"></textarea>
+                </tr>
+            </table>
+        </div>
+    <script src="./script.js">
+    </script>
+    </body>
+</html>
