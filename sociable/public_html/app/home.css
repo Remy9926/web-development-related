@@ -1,0 +1,182 @@
+body {
+    margin: 0px 200px 0px 200px;
+    background-color: #262626;
+}
+
+#header {
+    margin-top: 5px;
+    background-color: #262A56;
+    border-radius: 25px;
+}
+
+#logoutBTN {
+    padding: 5px;
+    float: right;
+    text-align: right;
+    margin-right: 10px;
+}
+
+#logoutBTN img {
+    width: 11%;
+
+}
+
+.headerChild {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    font-size: 35px;
+    color: white;
+}
+
+#logoName {
+    padding: 15px;
+    margin-left: 20px;
+}
+
+#container {
+    overflow: hidden;
+    width: 100%;
+}
+
+#childA {
+    width: 35%;
+    color: white;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: #2f2c2c;
+    margin-top: 20px;
+    float: left;
+}
+
+#childA > * {
+    padding: 20px;
+}
+
+#childA > *:hover {
+    background-color: darkgray;
+    border-radius: 25px;
+}
+
+#friendList img {
+    width: 10%;
+}
+
+#friendList div {
+    margin-right: 60%;
+    margin-top: 7px;
+    float: right;
+}
+
+#search img {
+    width: 10%;
+}
+
+#search div {
+    margin-right: 14%;
+    margin-top: 7px;
+    float: right;
+}
+
+#childB {
+    margin: 20px 0px 20px 20px;
+    float: right;
+    width: 60%;
+    color: white;
+}
+
+.postMain {
+    margin-bottom: 20px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: #2f2c2c;
+}
+
+.postMain p {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.postMain img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.postMain img:hover {
+    -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(1.5);
+}
+
+.pfp {
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.username {
+    display: inline-block;
+    margin-left: 12px;
+    position: absolute;
+    font-size: 20px;
+}
+
+#pfpName {
+    text-align: left;
+}
+
+.username {
+    display: inline-block;
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    margin: 0px 0px 0px 20px;
+}
+
+#pfpName p {
+    margin-top: 10px;
+}
+
+span {
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    padding-left: 30px;
+}
+
+.timestamp {
+    margin-bottom: 10px;
+    color: #37B9F1;
+    font-size: 14px;
+}
+
+.content {
+    font-size: 20px;
+    color: #8739F9;
+    margin-left: 20px;
+}
+
+.userDetails {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.postMain .userDetails img {
+    width: 30px;
+    height: 30px;
+}
+
+.postMain .userDetails p {
+    font-size: 32px;
+}
+
+.postUser {
+    border-radius: 50%;
+}
+
+.postMain .content {
+    margin-left: 30px;
+}
+
+#help {
+    text-align: center;
+}

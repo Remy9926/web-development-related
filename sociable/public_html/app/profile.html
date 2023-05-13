@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../script.js"></script>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <title>Your Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="headerChild" id="logoName">Sociable</div>
+        <div class="headerChild" id="greeting"></div>
+        <img src="/img/home.png" onclick="goHome()">
+    </div>
+    <div id="container">
+        <div id="about">
+            <div id="pfp"></div>
+            <div class="dropdown">
+                <button class="dropbtn">Change Profile Picture</button>
+                <div class="dropdown-content">
+                    <input type="file" id="img" accept="image/*" name="img">
+                    <p id="imgStatus"></p>
+                    <button type="button" onclick="setProfilePic()">Change profile picture</button>
+                    <button type="button" onclick="removeProfilePic()">Remove profile picture</button>
+                </div>
+            </div>
+            <p id="nameField">
+                Name:
+            </p>
+            <p id="ageField">
+                Age:
+            </p>
+            <p id="genderField">
+                Gender:
+            </p>
+        </div>
+        <div id="miniHeader">
+            <button onclick="window.location.href='./post.html'">What's on your mind?</button>
+            <img src="/img/comIcon.png" onclick="window.location.href='./createCommunity.html'" title="Create communities">
+        </div>
+
+        <div id="posts">
+        </div>
+    </div>
+
+    <script>
+        fetchProfilePic();
+        greetUser();
+        getUserInfo();
+        fetchPosts();
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../script.js"></script>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <title>Sociable Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="headerChild" id="logoName">
+            Sociable
+        </div>
+        <div id="logoutBTN">
+            <img src="/img/logoutIcon.png" onclick="logout()" title="Log out">
+        </div>
+    </div>
+    <div id="container">
+        <div id="childA">
+            <div id="pfpName" onclick="window.location.href='./profile.html'">
+            </div>
+            <div id="friendList" onclick="window.location.href='./friends.html'">
+                <img src="/img/friendsIcon.png" title="Your friends">
+                <div>Your friends</div>
+            </div>
+            <div id="search" onclick="window.location.href='./search.html'">
+                <img src="/img/searchIcon.png" title="Search">
+                <div>Search for friends and communities</div>
+
+            </div>
+            <div id="help" onclick="window.location.href='./help.html'">
+                <div>Need help?</div>
+            </div>
+        </div>
+        <div id="childB">
+            <div class="postMain">
+                <span class="userDetails">
+                    <img src="../img/pfp/default.png" alt="Profile Picture" width="30px" height="30px" class="postUser">
+                    <p class="username">Anonymous123</p>
+                </span>
+                <p class="content">Got my new laptop today 😍 so excited!</p>
+                <img src="/img/laptop.jpg" class="postImage">
+                <span class="timestamp">21/3/1492 3:30:37 AM</span>
+            </div>
+            <div class="postMain">
+                    <span class="userDetails">
+                        <img src="../img/pfp/default.png" alt="Profile Picture" width="30px" height="30px" class="postUser">
+                        <p class="username">Anonymous123</p>
+                    </span>
+                    <p class="content">Just ran this command and my laptop broke 😭</p>
+                    <img src="/img/command.jpg" class="postImage">
+                    <span class="timestamp">4/20/0069 5:00:07 PM</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        getPfpAndUsername();
+        getFriendPosts();
+    </script>
+</body>
+</html>
